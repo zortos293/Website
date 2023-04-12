@@ -13,28 +13,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Zortos.me</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="Projects.html">Projects</a>
-            <a class="nav-item nav-link active" href="Contact.html">Contact</a>
-            <a class="nav-item nav-link" href="About.html">About</a>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Zortos.me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="Projects.html">Projects</a>
+                <a class="nav-item nav-link active" href="Contact.html">Contact</a>
+                <a class="nav-item nav-link" href="About.html">About</a>
+                </div>
             </div>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">Contact Me</h1>
+            <p class="lead">Please use the form below to get in touch with me.</p>
+            <hr class="my-4">
+            <form method="post" action="mailto:eminyilmazer293@gmail.com" enctype="text/plain">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-    </nav>
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, User!</h1>
-        <p class="lead">hello my name is zortos and im a software developer</p>
-        <hr class="my-4">
-        <p>i create a lot of stuff! mostly c# projects.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Projects</a>
-        </p>
-      </div>
+    </body>
 </body>
 </html>
